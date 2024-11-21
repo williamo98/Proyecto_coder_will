@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*-- Hero --*/
+.hero a:hover {
+    background-color: rgb(153, 153, 155);
+    color: #050a30;
+}
+
+main div a:hover {
+    background-color: rgb(153, 153, 155);
+    color: #050a30;
+}
+
+main div div a:hover {
+    background-color: rgb(153, 153, 155);
+    color: #050a30;
+}
+
+
+.hero {
+    height: 600px;
+    background-image: url("../img/baner_1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero h1 {
+    font-size: 60px;
+    padding: 10px;
+}
+
+.hero a {
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+}
+
+/*-- SOBRE NOSOTROS --*/
+
+.sobre_nosotros {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+}
+
+/*imagen + texto + boton*/
+.sobre_nosotros div {
+    display: flex;
+    align-items: center;
+}
+
+.sobre_nosotros h2 {
+    margin: 80px 20px 20px 20px;
+}
+
+.sobre_nosotros div img {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+}
+
+/*texto + boton*/
+.sobre_nosotros div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre_nosotros div div p {
+    margin: 20px;
+    text-align: start;
+}
+
+/*boton*/
+.sobre_nosotros div div a {
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+/*-- SERVICIOS --*/
+
+
+.servicios div {
+    display: flex;
+    text-align: center;
+}
+
+.servicios_desarrollo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+
+}
+
+.servicios_community {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.servicios_publicidad {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.servicios_comercio {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.servicios h2 {
+    text-align: center;
+    background-color: #050a30;
+    color: white;
+    display: none;
+    margin: 80px 0px 20px 0px
+}
+
+.servicios h3 {
+    margin: 20px 20px 20px 20px
+}
+
+.servicios div a {
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+
+}
+
+.servicios div img {
+    width: 300px;
+    height: 430px;
+    margin: 20px 20px 0px 20px;
+}
+
+/*-- PROYECTOS --*/
+
+.proyectos h2 {
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+}
+
+.proyectos div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.proyectos div img {
+    width: 30%;
+    height: 650px;
+    margin: 20px;
+}
+
+/*-- REVIEWS --*/
+
+.reviews h2 {
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+}
+
+.reviews div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews img {
+    width: 20%;
+    height: 80%;
+    margin: 20px;
+}
+
+/*-- FOOTER --*/
+
+footer {
+    background-color: #050a30;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "texto texto texto"
+        "logo agencia politicas"
+        "redes agencia politicas";
+    gap: 5%;
+}
+
+footer h2 {
+    color: white;
+    grid-area: texto;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo_footer {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.redes {
+    width: 120px;
+    grid-area: redes;
+    justify-self: center;
+}
+
+.footer_agencia {
+    grid-area: agencia;
+    justify-self: start;
+}
+
+.footer_politicas {
+    grid-area: politicas;
+    justify-self: start;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer h2 {
+    text-align: center;
+
+}
+
+.logo_footer {
+    width: 60px;
+    height: 60px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    margin: 1%;
+}
+
+
+
+
+
+/*---------- NOSOTROS -----------*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: #050a30;
+    background-image: url(../img/nosotros_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 40px;
+    font-size: 100px;
+
+}
+
+.banner h2 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main section p {
+    text-align: center;
+
+}
+
+
+
+/*---------- PROYECTOS -----------*/
+
+.titulo {
+    height: 200px;
+    background-color: #050a30;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+main img {
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+}
+
+/*--Seccion_pagina_1--*/
+
+.pagina_ejemplo_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagina_ejemplo_1 img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.416);
+}
+
+.pagina_ejemplo_1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: start;
+    width: 50%;
+}
+
+.pagina_ejemplo_1 div p {
+    text-align: start;
+}
+
+.pagina_ejemplo_1 div a {
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+/*--Seccion_pagina_2--*/
+
+
+.pagina_ejemplo_2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #050a30;
+    color: white
+}
+
+.pagina_ejemplo_2 img {
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.416);
+}
+
+.pagina_ejemplo_2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: start;
+    width: 50%;
+}
+
+.pagina_ejemplo_2 div p {
+    text-align: start;
+}
+
+.pagina_ejemplo_2 div a {
+    color: #050a30;
+    background-color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+/*--Seccion_pagina_3--*/
+
+.pagina_ejemplo_3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagina_ejemplo_3 img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.416);
+}
+
+.pagina_ejemplo_3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: start;
+    width: 50%;
+}
+
+.pagina_ejemplo_3 div p {
+    text-align: start;
+}
+
+
+.pagina_ejemplo_3 div a {
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+
+/*-------PAGINA_SERVICIOS--------*/
+.servicios_banners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicios_todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*----servicios_----*/
+
+.servicios_desarrollo_community {
+    display: flex;
+    justify-content:center;
+}
+
+.servicios_desarrollo_community div {
+    width: 50%;
+    margin: 10px;
+    border:solid;
+    padding: 10px;
+}
+.servicios_desarrollo_community div div{
+    border: none;
+    margin: 10px;
+    width: 90%;
+}
+.servicios_desarrollo_community div div h2 {
+    text-align: start;
+}
+.servicios_desarrollo_community div div p {
+    text-align: start;
+}
+.servicios_desarrollo_community div div ul li p{
+    text-align: start;
+}
+
+/*----servicios_2----*/
+
+.Servicios_publicidad_comercio {
+    display: flex;
+    justify-content: center;
+}
+
+.Servicios_publicidad_comercio div {
+    width: 50%;
+    margin: 10px;
+    border:solid;
+    padding: 10px;
+}
+.Servicios_publicidad_comercio div div{
+    border: none;
+    margin: 10px;
+    width: 90%;
+    
+}
+.Servicios_publicidad_comercio div div h2 {
+    text-align: start;
+}
+.Servicios_publicidad_comercio div div p {
+    text-align: start;
+}
+.Servicios_publicidad_comercio div div ul li p{
+    text-align: start;
+}
+
+.servicios_todos div div a{
+    color: white;
+    background-color: #050a30;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    }
+
+
+/*-------RESPONSIVE--------*/
+
+@media screen and (max-width:1300px) {
+
+    .servicios div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios div img {
+        height: 500px;
+        width: 400px;
+
+    }
+
+    .servicios div div {
+        height: 100%;
+        width: 70%;
+    }
+
+    .servicios div div img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:1070px) {
+    .servicios_banners{
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media screen and (max-width:960px) {
+
+    .sobre_nosotros div {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .sobre_nosotros div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sobre_nosotros h2 {
+        text-align: center;
+    }
+
+    .proyectos div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos div img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .pagina_ejemplo_1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_1 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_1 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .pagina_ejemplo_2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_2 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .pagina_ejemplo_2 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_3 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_3 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .servicios_desarrollo_community{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Servicios_publicidad_comercio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Servicios_publicidad_comercio div {
+        width: 80%;
+    }
+    .servicios_desarrollo_community div{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "texto texto"
+            "logo agencia "
+            "redes politicas";
+        gap: 5%;
+    }
+
+    .logo_footer {
+        align-self: center;
+    }
+
+    .reviews div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews div img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .servicios_banners img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "texto texto"
+            "agencia agencia "
+            "politicas politicas"
+            "logo logo"
+            "redes redes";
+        gap: 2%;
+    }
+
+    .footer_agencia {
+        grid-area: agencia;
+        justify-self: center;
+    }
+
+    .footer_politicas {
+        grid-area: politicas;
+        justify-self: center;
+    }
+
+    .sobre_nosotros div img {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+}
