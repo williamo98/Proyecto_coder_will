@@ -1,0 +1,376 @@
+/*------ INDEX --------*/
+
+.hero {
+    height: 600px;
+    background-image: url("../img/baner_1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 60px;
+        padding: 10px;
+    }
+}
+
+
+.sobre_nosotros {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    h2 {
+        margin: 80px 20px 20px 20px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 600px;
+            height: 400px;
+            margin: 20px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 20px;
+                text-align: start;
+            }
+        }
+    }
+}
+
+.servicios {
+    h2 {
+        text-align: center;
+        background-color: #050a30;
+        color: white;
+        display: none;
+        margin: 80px 0px 20px 0px
+    }
+
+    div {
+        display: flex;
+        text-align: center;
+
+        .servicios_desarrollo {
+            img {
+                width: 300px;
+                height: 430px;
+                margin: 20px 20px 0px 20px;
+            }
+
+            h3 {
+                margin: 20px
+            }
+
+            @include tarjetas_index(flex, column, center, 25%)
+        }
+
+        .servicios_community {
+            img {
+                width: 300px;
+                height: 430px;
+                margin: 20px 20px 0px 20px;
+            }
+
+            h3 {
+                margin: 20px
+            }
+
+            @include tarjetas_index(flex, column, center, 25%)
+        }
+
+        .servicios_publicidad {
+
+            img {
+                width: 300px;
+                height: 430px;
+                margin: 20px 20px 0px 20px;
+            }
+
+            h3 {
+                margin: 20px
+            }
+
+            @include tarjetas_index(flex, column, center, 25%)
+        }
+
+        .servicios_comercio {
+            img {
+                width: 300px;
+                height: 430px;
+                margin: 20px 20px 0px 20px;
+            }
+
+            h3 {
+                margin: 20px
+            }
+
+            @include tarjetas_index(flex, column, center, 25%)
+        }
+
+    }
+}
+
+.proyectos {
+
+    h2 {
+        text-align: center;
+        margin: 40px 20px 20px 20px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 30%;
+            height: 650px;
+            margin: 20px;
+
+        }
+    }
+}
+
+.reviews {
+    h2 {
+        text-align: center;
+        margin: 40px 20px 20px 20px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 20%;
+            height: 80%;
+            margin: 20px;
+        }
+    }
+}
+
+
+
+/*---------- NOSOTROS -----------*/
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: #050a30;
+    background-image: url(../img/nosotros_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 40px;
+    font-size: 100px;
+
+    h2 {
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+}
+
+section {
+    p {
+        text-align: justify;
+        margin: 20px;
+    }
+}
+
+
+/*---------- PROYECTOS -----------*/
+
+
+.titulo {
+    height: 200px;
+    background-color: #050a30;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+}
+
+.pagina_ejemplo_1 {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        height: 500px;
+        width: 500px;
+        margin: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.416)
+    }
+
+    div {
+        @extend %flex_texto_proyectos;
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+}
+
+.pagina_ejemplo_2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #050a30;
+    color: white;
+
+    div {
+        @extend %flex_texto_proyectos;
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+
+    img {
+        height: 500px;
+        width: 500px;
+        margin: 20px;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.416)
+    }
+}
+
+.pagina_ejemplo_3 {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        @extend %flex_texto_proyectos;
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p {
+            text-align: start;
+        }
+    }
+
+    img {
+        height: 500px;
+        width: 500px;
+        margin: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.416)
+    }
+}
+
+
+/*---------- SERVICIOS -----------*/
+
+
+.servicios_banners {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicios_todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .servicios_desarrollo_community {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 50%;
+            margin: 10px;
+            border: solid;
+            padding: 10px;
+
+            div {
+                border: none;
+                margin: 10px;
+                width: 90%;
+
+                h2 {
+                    text-align: start;
+                }
+
+                p {
+                    text-align: start;
+                }
+
+                ul {
+                    li {
+                        p {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Servicios_publicidad_comercio {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 50%;
+            margin: 10px;
+            border: solid;
+            padding: 10px;
+
+            div {
+                border: none;
+                margin: 10px;
+                width: 90%;
+
+                h2 {
+                    text-align: start;
+                }
+
+                p {
+                    text-align: start;
+                }
+
+                ul {
+                    li {
+                        p {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

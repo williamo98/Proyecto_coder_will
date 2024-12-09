@@ -1,0 +1,61 @@
+footer {
+    background-color: #050a30;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "texto texto texto"
+        "logo agencia politicas"
+        "redes agencia politicas";
+    gap: 5%;
+
+    h2 {
+        color: white;
+        grid-area: texto;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .logo_footer {
+        grid-area: logo;
+        justify-self: center;
+        width: 60px;
+        height: 60px;
+        padding: 1%;
+        margin: 1%;
+    }
+
+    .redes {
+        width: 120px;
+        grid-area: redes;
+        justify-self: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 1%;
+        }
+    }
+
+    .footer_agencia {
+        grid-area: agencia;
+        justify-self: start;
+    }
+    .footer_politicas {
+        grid-area: politicas;
+        justify-self: start;
+    }
+
+    ul {
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+}

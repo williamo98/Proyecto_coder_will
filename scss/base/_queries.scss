@@ -1,0 +1,189 @@
+@media screen and (max-width:1300px) {
+
+    .servicios div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios div img {
+        height: 500px;
+        width: 400px;
+
+    }
+
+    .servicios div div {
+        height: 100%;
+        width: 70%;
+    }
+
+    .servicios div div img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:1070px) {
+    .servicios_banners{
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media screen and (max-width:960px) {
+
+    .sobre_nosotros div {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .sobre_nosotros div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sobre_nosotros h2 {
+        text-align: center;
+    }
+
+    .proyectos div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos div img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .pagina_ejemplo_1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_1 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_1 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .pagina_ejemplo_2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_2 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .pagina_ejemplo_2 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina_ejemplo_3 div {
+        width: 90%;
+    }
+
+    .pagina_ejemplo_3 img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .servicios_desarrollo_community{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Servicios_publicidad_comercio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Servicios_publicidad_comercio div {
+        width: 80%;
+    }
+    .servicios_desarrollo_community div{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "texto texto"
+            "logo agencia "
+            "redes politicas";
+        gap: 5%;
+    }
+
+    .logo_footer {
+        align-self: center;
+    }
+
+    .reviews div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews div img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .servicios_banners img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "texto texto"
+            "agencia agencia "
+            "politicas politicas"
+            "logo logo"
+            "redes redes";
+        gap: 2%;
+    }
+
+    footer .footer_agencia {
+        grid-area: agencia;
+        justify-self: center;
+    }
+
+    footer .footer_politicas {
+        grid-area: politicas;
+        justify-self: center;
+    }
+
+    .sobre_nosotros div img {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+}
