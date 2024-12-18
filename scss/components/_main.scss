@@ -139,7 +139,15 @@
             width: 30%;
             height: 650px;
             margin: 20px;
+            transition: 1s;
+        }
+    }
+}
 
+.proyectos {
+    div {
+        img:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -180,15 +188,11 @@
     background-attachment: fixed;
     margin-bottom: 40px;
     font-size: 100px;
-
-    h2 {
-        font-weight: bold;
-        font-size: 35px;
-    }
-
 }
 
 section {
+
+    h2,
     p {
         text-align: justify;
         margin: 20px;
@@ -206,11 +210,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    h1 {
+    h1{
         text-align: center;
-        font-weight: bolder;
-        font-size: 40px;
     }
 }
 
@@ -294,6 +295,13 @@ section {
 
 /*---------- SERVICIOS -----------*/
 
+.servicios_titulo {
+    background-color: $botones_color_blue;
+    h1 {
+        text-align: center;
+        color: $botones_color_white
+    }
+}
 
 .servicios_banners {
     display: flex;
@@ -311,10 +319,13 @@ section {
         justify-content: center;
 
         div {
-            width: 50%;
+            width: 100%;
             margin: 10px;
             border: solid;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
             div {
                 border: none;
@@ -340,15 +351,18 @@ section {
         }
     }
 
-    .Servicios_publicidad_comercio {
+    .servicios_publicidad_comercio {
         display: flex;
         justify-content: center;
 
         div {
-            width: 50%;
+            width: 100%;
             margin: 10px;
             border: solid;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
             div {
                 border: none;
@@ -371,6 +385,46 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+
+/*---------- CONTACTO -----------*/
+
+.contacto_titulo {
+    h1 {
+        text-align: center;
+    }
+}
+
+.contacto_form {
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #050a306c;
+        margin: 5px;
+        border: #050a30 solid;
+        width: 60%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 80%;
+
+            label {
+                margin: 10px;
+            }
+
+            input {
+                margin: 10px;
+            }
+
         }
     }
 }

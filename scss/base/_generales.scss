@@ -5,30 +5,44 @@
 }
 
 .boton_oscuro {
-    color: white;
-    background-color: #050a30;
+    color: $botones_color_white;
+    background-color: $botones_color_blue;
     text-decoration: none;
     text-align: center;
     padding: 10px;
     margin: 10px;
     width: 120px;
+    transition-property: width;
+    transition-duration: 1s;
+
 }
 
 .boton_oscuro:hover {
-  background-color: rgb(153, 153, 155);
-  color: #050a30;
+    background-color: $botones_color_transition;
+    color: $botones_color_blue;
+    width: 150px;
 }
 
 .boton_claro {
-    color: #050a30;
-    background-color: white;
+    color: $botones_color_blue;
+    background-color: $botones_color_white;
     text-decoration: none;
     margin: 20px;
     padding: 10px;
     width: 120px;
     text-align: center;
+    transition-property: width;
+    transition-duration: 1s;
 }
+
 .boton_claro:hover {
-    background-color: rgb(153, 153, 155);
-    color: #050a30;
-  }
+    background-color: $botones_color_transition;
+    color: $botones_color_blue;
+    width: 20%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px;
+}

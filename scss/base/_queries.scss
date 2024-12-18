@@ -24,7 +24,7 @@
 
 }
 
-@media screen and (max-width:1070px) {
+@media screen and (max-width:1199px) {
     .servicios_banners {
         flex-direction: column-reverse;
     }
@@ -104,19 +104,13 @@
     .servicios_desarrollo_community {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
-    .Servicios_publicidad_comercio {
+    .servicios_publicidad_comercio {
         flex-direction: column;
         align-items: center;
-    }
-
-    .Servicios_publicidad_comercio div {
-        width: 80%;
-    }
-
-    .servicios_desarrollo_community div {
-        width: 80%;
+        padding: 10px;
     }
 
 }

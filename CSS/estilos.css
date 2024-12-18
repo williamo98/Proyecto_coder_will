@@ -22,11 +22,14 @@
   padding: 10px;
   margin: 10px;
   width: 120px;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .boton_oscuro:hover {
   background-color: rgb(153, 153, 155);
   color: #050a30;
+  width: 150px;
 }
 
 .boton_claro {
@@ -37,11 +40,20 @@
   padding: 10px;
   width: 120px;
   text-align: center;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .boton_claro:hover {
   background-color: rgb(153, 153, 155);
   color: #050a30;
+  width: 20%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px;
 }
 
 /*------ INDEX --------*/
@@ -169,6 +181,11 @@
   width: 30%;
   height: 650px;
   margin: 20px;
+  transition: 1s;
+}
+
+.proyectos div img:hover {
+  transform: scale(1.1);
 }
 
 .reviews h2 {
@@ -200,11 +217,8 @@
   margin-bottom: 40px;
   font-size: 100px;
 }
-.banner h2 {
-  font-weight: bold;
-  font-size: 35px;
-}
 
+section h2,
 section p {
   text-align: justify;
   margin: 20px;
@@ -221,8 +235,6 @@ section p {
 }
 .titulo h1 {
   text-align: center;
-  font-weight: bolder;
-  font-size: 40px;
 }
 
 .pagina_ejemplo_1 {
@@ -282,6 +294,14 @@ section p {
 }
 
 /*---------- SERVICIOS -----------*/
+.servicios_titulo {
+  background-color: #050a30;
+}
+.servicios_titulo h1 {
+  text-align: center;
+  color: white;
+}
+
 .servicios_banners {
   display: flex;
   justify-content: space-around;
@@ -298,10 +318,13 @@ section p {
   justify-content: center;
 }
 .servicios_todos .servicios_desarrollo_community div {
-  width: 50%;
+  width: 100%;
   margin: 10px;
   border: solid;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .servicios_todos .servicios_desarrollo_community div div {
   border: none;
@@ -317,29 +340,63 @@ section p {
 .servicios_todos .servicios_desarrollo_community div div ul li p {
   text-align: start;
 }
-.servicios_todos .Servicios_publicidad_comercio {
+.servicios_todos .servicios_publicidad_comercio {
   display: flex;
   justify-content: center;
 }
-.servicios_todos .Servicios_publicidad_comercio div {
-  width: 50%;
+.servicios_todos .servicios_publicidad_comercio div {
+  width: 100%;
   margin: 10px;
   border: solid;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.servicios_todos .Servicios_publicidad_comercio div div {
+.servicios_todos .servicios_publicidad_comercio div div {
   border: none;
   margin: 10px;
   width: 90%;
 }
-.servicios_todos .Servicios_publicidad_comercio div div h2 {
+.servicios_todos .servicios_publicidad_comercio div div h2 {
   text-align: start;
 }
-.servicios_todos .Servicios_publicidad_comercio div div p {
+.servicios_todos .servicios_publicidad_comercio div div p {
   text-align: start;
 }
-.servicios_todos .Servicios_publicidad_comercio div div ul li p {
+.servicios_todos .servicios_publicidad_comercio div div ul li p {
   text-align: start;
+}
+
+/*---------- CONTACTO -----------*/
+.contacto_titulo h1 {
+  text-align: center;
+}
+
+.contacto_form {
+  display: flex;
+  justify-content: center;
+}
+.contacto_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(5, 10, 48, 0.4235294118);
+  margin: 5px;
+  border: #050a30 solid;
+  width: 60%;
+}
+.contacto_form form div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 80%;
+}
+.contacto_form form div label {
+  margin: 10px;
+}
+.contacto_form form div input {
+  margin: 10px;
 }
 
 footer {
@@ -409,7 +466,7 @@ footer ul li a {
     height: 100%;
   }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1199px) {
   .servicios_banners {
     flex-direction: column-reverse;
   }
@@ -470,16 +527,12 @@ footer ul li a {
   .servicios_desarrollo_community {
     flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
-  .Servicios_publicidad_comercio {
+  .servicios_publicidad_comercio {
     flex-direction: column;
     align-items: center;
-  }
-  .Servicios_publicidad_comercio div {
-    width: 80%;
-  }
-  .servicios_desarrollo_community div {
-    width: 80%;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 800px) {
